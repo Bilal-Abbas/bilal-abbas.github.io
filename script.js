@@ -118,16 +118,10 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Initialize typing animation when page loads
+// Initialize page load
 document.addEventListener('DOMContentLoaded', () => {
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
-        // Add a small delay before starting the animation
-        setTimeout(() => {
-            typeWriter(heroTitle, originalText, 50);
-        }, 500);
-    }
+    // No typing animation - title displays immediately with highlight
+    console.log('Personal website loaded successfully!');
 });
 
 // Add hover effects to project cards
