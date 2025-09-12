@@ -120,8 +120,24 @@ function typeWriter(element, text, speed = 100) {
 
 // Initialize page load
 document.addEventListener('DOMContentLoaded', () => {
-    // No typing animation - title displays immediately with highlight
-    console.log('Personal website loaded successfully!');
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        // Store the original HTML content
+        const originalHTML = heroTitle.innerHTML;
+        // Extract just the text content for typing animation
+        const textContent = heroTitle.textContent;
+        
+        // Add a small delay before starting the animation
+        setTimeout(() => {
+            // First type the text content
+            typeWriter(heroTitle, textContent, 20);
+            
+            // After typing is complete, restore the HTML with highlighting
+            setTimeout(() => {
+                heroTitle.innerHTML = originalHTML;
+            }, textContent.length * 20 + 500); // Wait for typing + 0.5 second
+        }, 200);
+    }
 });
 
 // Add hover effects to project cards

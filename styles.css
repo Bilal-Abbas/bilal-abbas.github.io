@@ -10,10 +10,12 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #2d3748;
     background-color: #ffffff;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 .container {
@@ -46,8 +48,10 @@ body {
 
 .nav-logo h2 {
     color: #2563eb;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    letter-spacing: -0.02em;
 }
 
 .nav-menu {
@@ -58,8 +62,10 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #2d3748;
     font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -118,10 +124,12 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    line-height: 1.2;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
 }
 
 .highlight {
@@ -129,17 +137,20 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 300;
     margin-bottom: 1.5rem;
     color: #e5e7eb;
+    letter-spacing: -0.01em;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    font-weight: 300;
     margin-bottom: 2rem;
     color: #d1d5db;
-    line-height: 1.7;
+    line-height: 1.8;
+    letter-spacing: -0.005em;
 }
 
 .hero-buttons {
@@ -149,15 +160,16 @@ body {
 }
 
 .btn {
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
     transition: all 0.3s ease;
     display: inline-block;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
 }
 
 .btn-primary {
@@ -194,14 +206,21 @@ body {
 .profile-image {
     width: 120px;
     height: 120px;
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem;
-    font-size: 3rem;
-    color: white;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .profile-info h3 {
@@ -245,11 +264,13 @@ section {
 }
 
 .section-title {
+    font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 600;
     margin-bottom: 3rem;
-    color: #1f2937;
+    color: #1a202c;
+    letter-spacing: -0.02em;
     position: relative;
 }
 
@@ -279,9 +300,11 @@ section {
 
 .about-text p {
     font-size: 1.1rem;
+    font-weight: 300;
     margin-bottom: 1.5rem;
-    color: #4b5563;
-    line-height: 1.7;
+    color: #4a5568;
+    line-height: 1.8;
+    letter-spacing: -0.005em;
 }
 
 .skills-grid {
@@ -290,10 +313,11 @@ section {
 }
 
 .skill-category h3 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: #1a202c;
+    letter-spacing: -0.01em;
 }
 
 .skills {
@@ -305,10 +329,11 @@ section {
 .skill {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
+    letter-spacing: -0.005em;
 }
 
 /* Experience Section */
@@ -347,16 +372,20 @@ section {
 }
 
 .timeline-content h3 {
-    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #1a202c;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
 }
 
 .timeline-content h4 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
     color: #2563eb;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.005em;
 }
 
 .timeline-date {
@@ -373,9 +402,11 @@ section {
 .timeline-description li {
     position: relative;
     padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #4b5563;
-    line-height: 1.6;
+    margin-bottom: 0.6rem;
+    color: #4a5568;
+    line-height: 1.7;
+    font-weight: 300;
+    letter-spacing: -0.005em;
 }
 
 .timeline-description li::before {
@@ -425,16 +456,20 @@ section {
 }
 
 .project-card h3 {
-    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: #1a202c;
+    letter-spacing: -0.01em;
 }
 
 .project-card p {
-    color: #4b5563;
-    line-height: 1.6;
+    color: #4a5568;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
+    font-weight: 300;
+    letter-spacing: -0.005em;
 }
 
 .project-tech {
@@ -446,10 +481,11 @@ section {
 .tech-tag {
     background: #e5e7eb;
     color: #374151;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
+    letter-spacing: -0.005em;
 }
 
 /* Contact Section */
@@ -461,17 +497,21 @@ section {
 }
 
 .contact-info h3 {
-    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: #1a202c;
+    letter-spacing: -0.01em;
 }
 
 .contact-info p {
     font-size: 1.1rem;
-    color: #4b5563;
+    font-weight: 300;
+    color: #4a5568;
     margin-bottom: 2rem;
-    line-height: 1.7;
+    line-height: 1.8;
+    letter-spacing: -0.005em;
 }
 
 .contact-details {
@@ -577,7 +617,7 @@ section {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .about-content,
@@ -609,7 +649,7 @@ section {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .section-title {
